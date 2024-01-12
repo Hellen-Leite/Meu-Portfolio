@@ -1,0 +1,192 @@
+main #certificados{
+    margin-top: 30px;
+  }
+main #certificados h2{
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+main #certificados .descricao-certificados{
+    width:900px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:0 auto;
+}
+main #certificados .sobre-certificados{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width:900px;
+    padding: 20px 0;
+    transition: 0.3s;
+    
+    
+}
+main #certificados .sobre-certificados:hover{
+    transform: scale(1.1);
+}
+main #certificados .background-certificados.devemdobro{
+    width:700px;
+    height:325px;
+    background-color:var(--background-dev-em-dobro);
+}
+main #certificados .background-certificados.onebitcode{
+    width:700px;
+    height:400px;
+    background-color:var(--background-one-bit-code);
+}
+main #certificados .background-certificados.senai{
+    width:700px;
+    height:400px;
+    background-color:var(--background-senai);
+
+}
+main #certificados .background-certificados{
+    margin-left: 20px;
+    border-radius: 5px;
+}
+main #certificados img.imagem-certificado{
+    width:500px;
+    margin: 25px 30px;
+    border-radius: 5px;
+}
+
+main #certificados .sobre-certificados .conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main #certificados .sobre-certificados .conteudo h3{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight:600px;
+}
+main #certificados .sobre-certificados .conteudo p{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 20px;
+    width: 300px;
+    text-align: justify;
+}
+@media(max-width:992px){
+    main #certificados .sobre-certificados{
+        width:700px;
+        align-items: center;
+    }
+    main #certificados .descricao-certificados{
+        width:600px;
+        text-align: justify;
+    }
+    
+    main #certificados .sobre-certificados .background-certificados.devemdobro{
+        height: 200px;
+    }
+    main #certificados .sobre-certificados .background-certificados{
+        width:350px;
+        height: 250px;
+    }
+  
+    main #certificados .background-certificados img{
+        width:300px;
+        margin: 15px 30px;
+       
+    }
+}
+@media(max-width:768px){
+    main #certificados{
+            margin-top: 50px;
+        }
+    main #certificados .descricao-certificados{
+            width:500px;
+            text-align: justify;
+        }
+    main #certificados .sobre-certificados{
+            width: 500px;
+        }
+    main #certificados .sobre-certificados .background-certificados.devemdobro{            
+            height: 150px;
+        }
+    main #certificados .sobre-certificados .background-certificados{
+            width:250px;
+            height: 175px;
+        }
+       
+    main #certificados .sobre-certificados .background-certificados img{
+            width: 200px;
+        }
+    main #certificados .sobre-certificados .conteudo{
+            width:200px
+        }
+    main #certificados .sobre-certificados .conteudo h3{
+            font-size: 1.3rem;
+        }
+    main #certificados .sobre-certificados .conteudo p{
+            width: 200px;
+            font-size: 0.8rem;
+        }
+      
+    }
+    @media(max-width:425px){
+        main #certificados{
+            margin-top: 40px;
+        }
+        main #certificados .meuscertificados{
+    width:300px;
+            margin-left: 65px;
+            font-size: 1.5rem;
+        }
+        main #certificados .descricao-certificados{
+            width:300px;
+            font-size: 0.8rem;
+        }
+        main #certificados .sobre-certificados{
+            flex-direction: column;
+            width:280px;
+            margin-top:50px;
+            align-items: center;
+            gap:20px
+        }
+        main #certificados .sobre-certificados .conteudo h3{
+            font-size: 1rem;
+        }
+        main #certificados .sobre-certificados .conteudo p{
+            width:260px
+        }
+        main #certificados .sobre-certificados .background-certificados{
+            border-radius: 5px;
+            margin:0 auto
+        }
+    }
+    @media(max-width:375px){
+        main #certificados .meuscertificados{
+            margin-left: 40px;
+            font-size: 1.3rem;
+        }
+        main #certificados .descricao-certificados{
+            width:260px
+        }
+        main #certificados .sobre-certificados{
+            width:250px;
+        }
+        main #certificados .sobre-certificados .background-certificados.devemdobro{
+            height: 135px;
+        }
+        main #certificados .sobre-certificados .background-certificados{
+            width:220px;
+            height: 165px;
+        }
+        main #certificados .sobre-certificados .background-certificados img{
+            width: 200px;
+            margin:10px 10px
+        }
+        main #certificados .sobre-certificados .conteudo p{
+            width:190px
+        }
+    }

@@ -1,0 +1,97 @@
+footer#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--background-header);
+    align-items: center;
+    min-height: 75px;
+    gap:20px;
+    padding:20px 0
+}
+footer#footer .rights .direitosautorais{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+footer#footer .rights .hellen{
+font-size: 1.2rem;
+font-weight: 400;
+}
+footer#footer .localizacao{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+footer#footer .cidade{
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+footer#footer .redessociais ul{
+    display: flex;
+    gap:15px;
+    position: relative;
+    margin-left: 40px;
+
+}
+footer#footer .redessociais ul li a{
+    color:#FFF;
+    font-size:2rem
+}
+footer#footer .redessociais ul li a:hover{
+    background-image: linear-gradient(to bottom, var(--background),var(--gradiente-azul), var(--gradiente-verde)) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#000;
+    
+}
+footer#footer .redessociais span::after{
+    content: " ";
+    width:100%;
+    height: 2px;
+    background-color: var(--hover-menu);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+}
+footer#footer .redessociais span{
+    font-size: 1rem;
+    position:relative;
+}
+@media(max-width:768px){
+    footer#footer .rights .direitosautorais, footer#footer .localizacao span{
+        font-size: 1.3rem;
+    }
+    footer#footer .rights .hellen, footer#footer .localizacao .cidade{
+        font-size:1rem;
+    }
+   
+    footer#footer .redessociais ul{
+        margin-left: 60px;
+    }
+    footer#footer .redessociais ul li a{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:425px){
+    footer#footer .rights span, 
+    footer#footer .localizacao span{
+        display: block;
+        text-align: center;
+    }
+    footer#footer .rights .direitosautorais, 
+    footer#footer .localizacao span {font-size: 1rem;
+    }
+    
+    footer#footer .rights .hellen, 
+    footer#footer .localizacao .cidade{
+        font-size: 0.8rem;
+    }
+    footer#footer .redessociais ul li a {
+        font-size: 1.3rem;
+    }
+    footer#footer .redessociais ul{
+        margin-left: 70px;
+    }
+}

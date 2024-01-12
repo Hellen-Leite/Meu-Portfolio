@@ -1,0 +1,214 @@
+html{
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+}
+body{overflow-x:hidden;
+    font-size: 1.6rem;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 400;
+    background-color: var(--background);
+    color:var(--cor-padrao);    
+}
+
+
+header#header{
+    background-color:var(--background-header);
+    display: flex;
+    padding: 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header#header a.link-logo img{
+    width: 100px;    
+}
+header#header a.link-logo:hover{
+    transform: scale(1.1);
+}
+
+main #sobre{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    gap: 50px;    
+}
+main #sobre .avatar{
+    width: 400px;
+    border-radius: 50px 30px 20px 5px;
+        
+}
+
+main #sobre .descricao-sobre{
+    margin-top: 30px;
+    position: relative;
+    
+}
+main #sobre .descricao-sobre .titulo-sobre{
+    margin-top: 15px;
+    font-size: 2.8rem;
+    font-family: 'Public sans';
+    font-weight: 700;
+    align-items: center;
+}
+
+main #sobre .descricao-sobre h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-image: linear-gradient(to bottom,var(--background),var(--gradiente-azul),var(--gradiente-verde));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#000;
+
+}
+
+main #sobre .descricao-sobre p{
+    width: 500px;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+main #sobre .descricao-sobre::after{
+    content: url('../images/seta_preta.png');
+    position: absolute;
+    height: 35px;
+    animation: setabottom 0.6s infinite alternate ease-in-out;
+  
+}
+@-webkit-keyframes setabottom{
+    0%{ -webkit-transform: translateY(0);opacity: 0.4;}
+    100%{ -webkit-transform: translateY(1em); opacity: 0.9;}
+}
+main .logo-home{
+    margin-bottom:25px;
+    top:300px;
+    left:1220px;
+    width:70px;    
+    position: sticky;
+    position:-webkit-sticky;
+    box-shadow: 1px 1px 1px 1px var(--gradiente-verde);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+main.logo-home:hover{
+    transform: scale(1.1);
+}
+main #sobre .icones ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 60px;
+    top:250px;
+    gap: 20px;
+}
+main #sobre .icones a i{
+    color:var(--cor-padrao);
+   
+}
+main #sobre .icones a i:hover{
+    background-image: linear-gradient(to bottom,var(--gradiente-azul),var(--gradiente-verde)) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#000;
+}
+@media(max-width:992px){
+    main #sobre{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #sobre .descricao-sobre{
+        text-align: center;
+    }
+    main .logo-home{
+        left:890px
+    }
+}
+@media(max-width:768px){
+    main #sobre .avatar{
+        width: 320px;
+    }
+    main #sobre .descricao-sobre{
+        margin-top: 0;
+        width:400px
+    }
+    main #sobre .descricao-sobre .titulo-sobre{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    main #sobre .descricao-sobre h2{
+        font-size: 1.8rem;
+    }
+    main #sobre .descricao-sobre p{
+        width:400px;
+        font-size: 1rem;
+        text-align: justify;
+    }
+    main #sobre .icones ul{
+        left:50px    }
+
+    main .logo-home{
+        left:668px
+        }
+}
+@media(max-width:425px){
+   
+    main #sobre .avatar{
+        width:200px;
+        margin-left: -55px;
+    }
+    main #sobre .icones ul{
+        top:200px;
+        left:25px;
+    }
+    main #sobre .icones ul li a{
+        font-size: 1.2rem;
+    }
+    main #sobre .descricao-sobre .titulo-sobre{
+        font-size: 1.8rem;
+    }
+    main #sobre .descricao-sobre h2{
+        font-size: 1.5rem;
+    }
+    main #sobre .descricao-sobre p{
+        width:300px;
+        font-size: 0.8rem;
+        margin-left: 60px;
+    }
+    main .logo-home{
+        display: none;
+    }
+    header#header a.link-logo img{
+        width: 70px;    
+    }
+  
+}
+@media(max-width:375px){
+    main #sobre{
+        padding-top: 40px;
+    
+    }
+    main #sobre .avatar{
+        margin-left: -65px;
+    }
+    main #sobre .icones ul{
+        left:15px
+    }
+    main #sobre .descricao-sobre{
+        width: 100%;
+    }
+    main #sobre .descricao-sobre .titulo-sobre{
+        font-size: 1.8rem;
+    
+    }
+    main #sobre .descricao-sobre h2{
+        font-size: 1.3rem;      
+    }
+    main #sobre .descricao-sobre p{
+        width:270px;
+    }
+}

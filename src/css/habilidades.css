@@ -1,0 +1,91 @@
+main #habilidades{
+    display: flex;
+    justify-content: center;
+}
+main #habilidades .card-habilidades{
+    width: 300px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin-right: 40px;  
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 0px 20px;
+    transition: 0.3s;     
+}
+
+main #habilidades .card-habilidades:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2)
+   
+}
+main #habilidades .card-habilidades:hover .html{
+color:var(--hover-html);
+}
+main #habilidades .card-habilidades:hover .css{
+    color: var(--hover-css);
+}
+main #habilidades .card-habilidades:hover .git{
+    color: var(--hover-git);
+}
+main #habilidades .card-habilidades .icones{
+    margin-top: 30px;
+    font-size: 3rem;
+}
+main #habilidades .card-habilidades .card{
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+main #habilidades .card-habilidades p{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-bottom: 20px;
+  
+
+}
+@media(max-width:992px){
+
+    main #habilidades{
+        flex-direction: column;
+        align-items: center;
+        gap:30px
+    }
+    main #habilidades .card-habilidades{
+        width:500px
+    }
+
+}
+@media (max-width:768px){
+    main #habilidades .card-habilidades{
+        width:400px;
+        margin-right: 0;
+    }
+}
+@media(max-width:425px){
+    main #habilidades{
+        margin-top: 60px;
+    }
+    main #habilidades .card-habilidades{
+        width:270px;
+    }    
+    main #habilidades .card-habilidades .card{
+        font-size: 1.5rem;
+    }
+    main #habilidades .card-habilidades .paragrafo-card{
+        font-size: 1rem;
+    }
+}
+@media(max-width:375px){
+    main #habilidades .card-habilidades{
+        width:230px
+    }
+    main #habilidades .card-habilidades .textos-habilidades .card{
+        font-size: 1.2rem;
+    }
+    main #habilidades .card-habilidades .textos-habilidades .card-habilidades{
+        font-size: 0.8rem;
+    }
+}
